@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+
+<head></head>
+<title>Twitch Username and User ID Translator</title>
+<style>
+	@media (prefers-color-scheme: light) {
+
+		h1,
+		h2,
+		h3,
+		h4,
+		h5,
+		p,
+		b,
+			{
+			color: black;
+		}
+
+		body {
+			background-color: white;
+		}
+	}
+
+	@media (prefers-color-scheme: dark) {
+
+		h1,
+		h2,
+		h3,
+		h4,
+		h5,
+		p,
+		b {
+			color: white;
+		}
+
+		body {
+			background-color: #212121;
+		}
+	}
+</style>
+</head>
+
+<body></body>
+<div style="color: gray; font-family: Arial, serif;">
+	<img src="twitch.png" style="text-align: center; width: 150px;" /><br><br>
+	<input type="text" id="q" name="q" style="text-align: center; width: 150px" placeholder="username or user id"
+		autocomplete=off /><br>
+	<div style="text-align: center;">
+		<small>
+			Detected: <span id="detected"></span> <a href="#"
+				title="click to manually switch between username and user id" id="switch">&#8644;</a><br />
+		</small>
+		<div id="result" style="display: none;">
+			<b id="response"></b> <a id="copy" href="#">copy</a><br />
+		</div>
+		<small id="error" style="color: red;"></small>
+		<small id="success" style="color: green;"></small>
+		<small id="copied" style="color: blue;"></small>
+	</div>
+</div>
+<script src="form.js"></script>
+</body>
+
+</html>
